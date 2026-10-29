@@ -12,8 +12,12 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Install Theos
+    - name: Install Dependencies & Theos
       run: |
+        # Cài đặt ldid để ký file
+        brew install ldid
+        
+        # Cài đặt Theos
         export THEOS=$HOME/theos
         git clone --recursive https://github.com/theos/theos.git $THEOS
         sudo $THEOS/bin/nic.pl <<< "13" || true
