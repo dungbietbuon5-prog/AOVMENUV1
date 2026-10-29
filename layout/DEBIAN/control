@@ -1,0 +1,9 @@
+Package: com.trungdung.aovmenu
+Name: Trung Dung AOV
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Menu hack AOV by Trung Dung
+Maintainer: TrungDung
+Author: TrungDung
+Section: Tweaks
+Depends: mobilesubstrate
